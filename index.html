@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoDash African Logistics - an HTML5 Canvas logistics simulation.">
+  <title>EcoDash | African Logistics Simulation</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">E</div>
+        <div>
+          <h1>EcoDash</h1>
+          <p>African Logistics Simulation</p>
+        </div>
+      </div>
+      <div class="topbar-status"><span class="status-dot"></span> OFFLINE • LOCAL SAVE</div>
+    </header>
+
+    <main class="game-wrap">
+      <section class="game-card" aria-label="EcoDash game">
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="1100" height="650"></canvas>
+          <div class="scanline" aria-hidden="true"></div>
+        </div>
+        <div class="control-strip">
+          <div><strong>MOVE</strong> WASD / Arrow Keys</div>
+          <div><strong>BOOST</strong> Shift</div>
+          <div><strong>PAUSE</strong> P</div>
+          <div><strong>SOUND</strong> M</div>
+        </div>
+      </section>
+
+      <aside class="info-panel">
+        <div class="panel-section">
+          <p class="eyebrow">MISSION BRIEF</p>
+          <h2>Solar Supply Run</h2>
+          <p>Transport an essential medical package from the solar depot to the rural clinic. Avoid hazards, manage energy, and use solar microgrids when the grid is available.</p>
+        </div>
+        <div class="panel-section compact">
+          <p class="eyebrow">SYSTEMS</p>
+          <div class="system-row"><span>Canvas rendering</span><b>ONLINE</b></div>
+          <div class="system-row"><span>Physics engine</span><b>ONLINE</b></div>
+          <div class="system-row"><span>Local storage</span><b>ONLINE</b></div>
+          <div class="system-row"><span>External libraries</span><b>NONE</b></div>
+        </div>
+        <div class="panel-section compact">
+          <p class="eyebrow">HIGH SCORES</p>
+          <ol id="highScores" class="scores-list"><li>No completed missions yet.</li></ol>
+        </div>
+        <div class="panel-footer">WAS262 • SF1 • EcoDash</div>
+      </aside>
+    </main>
+
+    <footer>Built with HTML5 Canvas, CSS3 and Vanilla JavaScript (ES6+).</footer>
+  </div>
+  <script src="src/game.js"></script>
+</body>
+</html>
